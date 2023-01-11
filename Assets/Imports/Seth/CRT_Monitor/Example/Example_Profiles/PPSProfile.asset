@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2457548338622787047
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
+  m_Name: Grain
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  colored:
+    overrideState: 0
+    value: 1
+  intensity:
+    overrideState: 1
+    value: 1
+  size:
+    overrideState: 1
+    value: 3
+  lumContrib:
+    overrideState: 0
+    value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,6 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings:
   - {fileID: 5976520727885477864}
+  - {fileID: -2457548338622787047}
 --- !u!114 &5976520727885477864
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -32,13 +61,13 @@ MonoBehaviour:
     value: 1
   ScreenScale:
     overrideState: 1
-    value: 0.21
+    value: 0.28
   IsLight:
     overrideState: 1
     value: 1
   OverallLight:
     overrideState: 1
-    value: 1
+    value: 0.745
   CenterLightScale:
     overrideState: 1
     value: 0.054

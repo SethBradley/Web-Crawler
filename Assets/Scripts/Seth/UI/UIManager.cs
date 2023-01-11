@@ -6,6 +6,9 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
+    [SerializeField]
+    private Canvas mainCanvas;
+    public Canvas MainCanvas => mainCanvas;
     public AudioSource mouseClickAudioSource;
 
 
@@ -16,6 +19,8 @@ public class UIManager : MonoBehaviour
             Destroy(this);
         else
             Instance = this;
+        
+        
     }
 
     void Start()
@@ -28,6 +33,8 @@ public class UIManager : MonoBehaviour
     {
         PlayClickNoise();
     }
+    
+    
 
     private void PlayClickNoise()
     {
